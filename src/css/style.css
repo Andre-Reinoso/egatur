@@ -79,7 +79,6 @@ body {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-
 /*Card Sign In*/
 
 .card-signin {
@@ -98,11 +97,17 @@ body {
 	padding: 2rem;
 }
 
+.toggler-color-blue .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49, 131, 212,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
+.toggler-color-blue.navbar-toggler {
+	border-color: #3183d4;
+}
 
 
 /*
 Colores 
-#0066CC (azul del logo)
-#3183d4 (azul del navbar)
+#0066CC   rgb(0, 102, 204) (azul del logo)
+#3183d4   rgb(49, 131, 212) (azul del navbar)
 */

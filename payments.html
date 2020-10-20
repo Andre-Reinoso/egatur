@@ -3,9 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Intranet</title>
+		<title>Payments</title>
 
-		<title>Egatur</title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="src/css/bootstrap.min.css" />
 		<!-- Custom style -->
@@ -18,45 +17,38 @@
 	</head>
 	<body>
 		<div class="container">
-			<!-- Start Navigation -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-color-white">
-				<!--  Mostrar esto solo en pantallas medianas y móviles  -->
-				<a class="navbar-brand d-lg-none" href="#">
-					<img src="http://egatur.edu.pe/web/img/page_logo_2017.png" alt="" width="75" height="80" />
+			<!-- Start Nav with Social Icons -->
+			<nav class="navbar navbar-expand-md navbar-dark bg-color-white">
+				<a href="#" class="navbar-brand">
+					<img src="http://egatur.edu.pe/web/img/page_logo_2017.png" width="75" height="80" alt="CoolBrand" />
 				</a>
 				<button
-					class="navbar-toggler"
 					type="button"
+					class="navbar-toggler toggler-color-blue"
 					data-toggle="collapse"
-					data-target="#navbarToggle"
-					aria-controls="navbarToggle"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
+					data-target="#navbarCollapse"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-					<ul class="navbar-nav">
-						<li class="nav-item">Link opcional</li>
-					</ul>
-					<!-- Mostrar esto solo en pantallas lg y superiores  -->
-					<a class="navbar-brand" href="#">
-						<img src="http://egatur.edu.pe/web/img/page_logo_2017.png" alt="" width="75" height="80" />
-					</a>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a href="#" class="nav-item mx-2"><i class="lab la-facebook-f la-2x"></i></a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item mx-2"><i class="lab la-twitter la-2x"></i></a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item mx-2"><i class="lab la-youtube la-2x"></i></a>
-						</li>
-					</ul>
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav"></div>
+					<div class="navbar-nav ml-auto">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="#" class="nav-item mx-2"><i class="lab la-facebook-f la-2x"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item mx-2"><i class="lab la-twitter la-2x"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item mx-2"><i class="lab la-youtube la-2x"></i></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
-			<!-- End Navigation -->
+			<!-- End Nav with Social Icons -->
 
 			<!-- Start Navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-color-egatur static-top">
@@ -74,9 +66,15 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarResponsive">
 						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="intranet.html">
+									Home
+									<span class="sr-only"></span>
+								</a>
+							</li>
 							<li class="nav-item active">
-								<a class="nav-link" href="#"
-									>Home
+								<a class="nav-link" href="payments.html"
+									>Pagos
 									<span class="sr-only"></span>
 								</a>
 							</li>
@@ -116,7 +114,7 @@
 									/>
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Perfil</a>
+									<a class="dropdown-item" href="profile.html">Perfil</a>
 									<a class="dropdown-item" href="#">Log Out</a>
 								</div>
 							</li>
@@ -126,44 +124,11 @@
 			</nav>
 			<!-- End Navigation -->
 
-			<!-- Start Navigation with icons -->
-			<nav class="navbar navbar-dark navbar-expand bg-color-egatur justify-content-center">
-				<div class="container">
-					<ul class="navbar-nav nav-justified w-100 text-center mt-1">
-						<li class="nav-item">
-							<a href="#" class="nav-link d-flex flex-column" data-toggle="collapse">
-								<i class="las la-home la-lg"></i>
-								<span class="d-none d-sm-inline mt-1">Home</span>
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link text-center d-flex flex-column"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								<i class="las la-user la-lg"></i>
-								<span class="d-none d-sm-inline px-1 mt-1"
-									>Usuario <small><i class="las la-angle-down"></i></small
-								></span>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Perfil</a>
-								<a class="dropdown-item" href="#">Log Out</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!-- End Navigation with icons -->
-
 			<!-- Start Content -->
 			<div class="card">
-				<div class="card-body">contenido</div>
+				<div class="card-body">
+					<div class="container mt-3"></div>
+				</div>
 			</div>
 		</div>
 
