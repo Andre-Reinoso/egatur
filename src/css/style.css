@@ -111,7 +111,6 @@ body {
 	border-left-color: #3183d4 !important;
 }
 
-
 .border-top-5-color-blue {
 	border-top-width: 5px !important;
 	border-top-style: solid !important;
@@ -120,6 +119,44 @@ body {
 
 .border-size-3-color-blue {
 	border: 3px solid #3183d4 !important;
+}
+
+.text-color-blue {
+	color: #3183d4;
+}
+
+/*Input Drag and Drop*/
+.inputDnD .form-control-file {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 6em;
+	outline: none;
+	visibility: hidden;
+	cursor: pointer;
+	background-color: #c61c23;
+	box-shadow: 0 0 5px solid #3183d4;
+}
+.inputDnD .form-control-file:before {
+	content: attr(data-title);
+	position: absolute;
+	top: 0.5em;
+	left: 0;
+	width: 100%;
+	min-height: 6em;
+	line-height: 2em;
+	padding-top: 1.5em;
+	opacity: 1;
+	visibility: visible;
+	text-align: center;
+	border: 0.15em dashed #3183d4;
+	-webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	overflow: hidden;
+}
+.inputDnD .form-control-file:hover:before {
+	border-style: solid;
+	box-shadow: inset 0px 0px 0px 0.2em #3183d4;
 }
 
 /*
