@@ -5,6 +5,14 @@ body {
 	background-size: cover;
 }
 
+.unstyle-ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
 .bg-color-white {
 	background-color: white;
 }
@@ -173,7 +181,7 @@ body {
 
 @media (min-width: 768px) {
 	.chart-pie {
-		height: 20rem  !important;
+		height: 20rem !important;
 	}
 }
 
